@@ -10,3 +10,10 @@ services:
       - 3000:3000
     environment:
       - NODE_ENV=development
+  lint:
+    build: .
+    command: npm run lint
+    volumes:
+      - ./src/:/app/src
+    environment:
+      - NODE_ENV=development
