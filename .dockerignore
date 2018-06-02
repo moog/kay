@@ -1,3 +1,4 @@
 *
 !.eslintrc
 !package.json
+!src

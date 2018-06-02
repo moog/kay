@@ -1,8 +1,13 @@
 FROM node:8.11-alpine
 
-COPY .eslintrc /app/.eslintrc
-COPY package.json /app/package.json
-
 WORKDIR /app
 
+COPY .eslintrc ./
+COPY package*.json ./
+
 RUN npm install -q
+
+COPY ./src ./src
+
+CMD ["npm", "start"]
+EXPOSE 3000
