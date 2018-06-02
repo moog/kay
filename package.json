@@ -8,8 +8,16 @@
     "test": "ava tests/**",
     "lint": "eslint --config .eslintrc 'src/**'"
   },
-  "author": "@moog",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moog/kay.git"
+  },
+  "author": "Mateus Moog <@moog>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/moog/kay/issues"
+  },
+  "homepage": "https://github.com/moog/kay#readme",
   "dependencies": {
     "got": "8.3.1",
     "koa": "2.5.1"
