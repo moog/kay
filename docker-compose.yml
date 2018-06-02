@@ -17,3 +17,13 @@ services:
       - ./src/:/app/src
     environment:
       - NODE_ENV=development
+  test:
+    build: .
+    command: npm run test
+    volumes:
+      - ./src/:/app/src
+      - ./tests/:/app/tests
+    environment:
+      - NODE_ENV=development
+    links:
+      - api
