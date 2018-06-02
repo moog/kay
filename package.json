@@ -1,0 +1,31 @@
+{
+  "name": "kay",
+  "version": "0.0.1",
+  "description": "A slack bot to make http requests",
+  "main": "src/bin/server.js",
+  "scripts": {
+    "start": "node src/bin/server.js",
+    "test": "ava tests/**",
+    "lint": "eslint --config .eslintrc 'src/**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moog/kay.git"
+  },
+  "author": "Mateus Moog <@moog>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/moog/kay/issues"
+  },
+  "homepage": "https://github.com/moog/kay#readme",
+  "dependencies": {
+    "got": "8.3.1",
+    "koa": "2.5.1"
+  },
+  "devDependencies": {
+    "ava": "0.25.0",
+    "eslint": "4.19.1",
+    "eslint-config-pagarme-base": "2.0.0",
+    "eslint-plugin-import": "2.12.0"
+  }
+}

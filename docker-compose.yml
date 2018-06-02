@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    command: npm start
+    volumes:
+      - ./src/:/app/src
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+  lint:
+    build: .
+    command: npm run lint
+    volumes:
+      - ./src/:/app/src
+    environment:
+      - NODE_ENV=development
+  test:
+    build: .
+    command: npm run test
+    volumes:
+      - ./src/:/app/src
+      - ./tests/:/app/tests
+    environment:
+      - NODE_ENV=development
+    links:
+      - api
