@@ -1,0 +1,15 @@
+{
+  "name": "kay",
+  "version": "0.0.1",
+  "description": "A slack bot to make http requests",
+  "main": "src/bin/server.js",
+  "scripts": {
+    "start": "node src/bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@moog",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "2.5.1"
+  }
+}
